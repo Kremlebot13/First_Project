@@ -39,15 +39,12 @@
 + Что такое [git flow](https://habr.com/post/106912/) **(\*\*\*\)**
 + [Первоначальная настройка](https://git-scm.com/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git): конфигурация username и email **(\*\*\*\)**
 
-**4. Ведение проектов**
-+  [Flow проекта, ведение в Power Steering](http://kb.simbirsoft/tasktracker/) **(\*\*\*\)**
-
-**5. Создание проекта, среда разработки Android Studio**
+**4. Создание проекта, среда разработки Android Studio**
 + [Установка Android Studio] (https://developer.android.com/studio/preview/index.html) **(\*\*\*\*)**
 + [Создание нового проекта](https://developer.android.com/training/basics/firstapp/index.html) **(\*\*\*\*)**
 + [Основы интерфейса Android Studio](https://developer.android.com/studio/intro/index.html) **(\*\*\*\*)**
 
-**6. Gradle**
+**5. Gradle**
 + [Gradle](https://developer.android.com/studio/build/index.html) **(\*\*\*\)**
 
 
