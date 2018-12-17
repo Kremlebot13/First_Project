@@ -5,6 +5,11 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static void main(String[] args) {
+        Name person = new Name("Anton", "Petrov");
+        person.print();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
