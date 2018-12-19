@@ -90,3 +90,53 @@
 6. Завершить task и отправить ментору затраченное время
 
 ---
+## III. Java. Часть 2
+---
+### Теоретическая часть
+
+**1. Классы:**
++ [Классы и объекты] (https://metanit.com/java/tutorial/3.1.php)  **(\*\*\*\*)**
++ [Пакеты] (https://metanit.com/java/tutorial/3.2.php)  **(\*\*\*\*)**
++ [Модификаторы доступа и инкапсуляция] (https://metanit.com/java/tutorial/3.3.php)  **(\*\*\*\*)**
++ [Статические члены и модификатор static] (https://metanit.com/java/tutorial/3.4.php)  **(\*\*\*\*)**
++ [Объекты как параметры методов] (https://metanit.com/java/tutorial/3.14.php)  **(\*\*\*\*)**
++ [Наследование, полиморфизм и ключевое слово super] (https://metanit.com/java/tutorial/3.5.php)  **(\*\*\*\*)**
++ [Абстрактные классы] (https://metanit.com/java/tutorial/3.6.php)  **(\*\*\*\*)**
++ [Иерархия наследования и преобразование типов] (https://metanit.com/java/tutorial/3.10.php)  **(\*\*\*\*)**
++ [Внутренние классы] (https://metanit.com/java/tutorial/3.12.php)  **(\*\*\*\*)**
++ [Интерфейсы] (https://metanit.com/java/tutorial/3.7.php)  **(\*\*\*\*)**
++ [Интерфейсы в механизме обратного вызова] (https://metanit.com/java/tutorial/3.16.php)  **(\*\*\*)**
++ [Перечисления enum] (https://metanit.com/java/tutorial/3.8.php)  **(\*\*\*\*)**
++ [Класс Object и его методы] (https://habrahabr.ru/post/168195/)  **(\*\*\*)**
++ [Обобщенные типы и методы] (https://metanit.com/java/tutorial/3.11.php)  **(\*\*\*)**
++ [Наследование и обобщения] (https://metanit.com/java/tutorial/3.15.php)  **(\*\*\*)**
++ [Ссылочные типы и клонирование объектов] (https://metanit.com/java/tutorial/3.13.php) **(\*\*\*)**
+
+**2. Обработка исключений:**  
++ [Оператор throws] (https://metanit.com/java/tutorial/4.1.php) **(\*\*\*\*)**
++ [Классы исключений] (https://metanit.com/java/tutorial/4.2.php) **(\*\*\*\*)**
++ [try-with-resources] (https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) **(\*\*\*\*)**
++ [Создание своих классов исключений] (https://metanit.com/java/tutorial/4.3.php) **(\*\*)**
+
+**3. Коллекции:**  
++ [Введение в коллекции в Java] (https://metanit.com/java/tutorial/5.1.php) **(\*\*\*\*)**
++ [Класс ArrayList и интерфейс List] (https://metanit.com/java/tutorial/5.2.php) **(\*\*\*\*)**
++ [Класс LinkedList] (https://metanit.com/java/tutorial/5.3.php) **(\*\*)**
++ [Класс HashSet] (https://metanit.com/java/tutorial/5.4.php) **(\*\*\*\*)**
++ [Класс TreeSet] (https://metanit.com/java/tutorial/5.5.php) **(\*\*\*)**
++ [Интерфейсы Comparable и Comporator. Сортировка] (https://metanit.com/java/tutorial/5.6.php) **(\*\*\**)**
++ [Очереди и класс ArrayDeque] (https://metanit.com/java/tutorial/5.7.php) **(\*\*)**
++ [Отображения и класс HashMap] (https://metanit.com/java/tutorial/5.8.php) **(\*\*\*\*)**
++ [Класс TreeMap] (https://metanit.com/java/tutorial/5.9.php) **(\*\*)**
++ [Итераторы] (https://metanit.com/java/tutorial/5.10.php) **(\*\*\)**
+
+**4. Работа со строками:**  
++ [Введение в строки. Класс String] (https://metanit.com/java/tutorial/7.1.php) **(\*\*\*\*)**
++ [Основные операции со строками] (https://metanit.com/java/tutorial/7.2.php) **(\*\*\*\*)**
++ [StringBuffer и StringBuilder] (https://metanit.com/java/tutorial/7.3.php) **(\*\*\*)**
++ [Регулярные выражения] (https://metanit.com/java/tutorial/7.4.php) **(\*\*)**
+
+**5. Лямбда-выражения:**  
++ [Введение в лямбда-выражения] (https://metanit.com/java/tutorial/9.1.php) **(\*\*\*\*)**
++ [Лямбды как параметры методов и ссылки на методы] (https://metanit.com/java/tutorial/9.2.php) **(\*\*\*\*)**
++ [Встроенные функциональные интерфейсы] (https://metanit.com/java/tutorial/9.3.php) **(\*\*)**
