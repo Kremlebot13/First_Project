@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
         person.print();
         task3();
         task4();
+        System.out.println(task5("abc123"));
     }
 
     //Problem 1
@@ -67,6 +68,29 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return array;
+    }
+
+    //problem 5
+    static String task5(String str) {
+        int index = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) <= '9' && str.charAt(i) >= '0') {
+                index = i;
+                break;
+            }
+        }
+
+        String line = str.substring(0, index);
+        String num = str.substring(index, str.length());
+
+        try {
+            int number = Integer.parseInt(num);
+            number++;
+            line += number;
+        } catch (NumberFormatException e) {
+            line = str.substring(0, str.length());
+        }
+        return line;
     }
 
     @Override
