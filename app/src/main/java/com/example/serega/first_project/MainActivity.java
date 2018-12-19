@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
         Name person = new Name("Anton", "Petrov");
         person.print();
         task3();
+        task4();
     }
 
     //Problem 1
@@ -42,6 +43,30 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return fibonacci(n - 1) + fibonacci(n - 2);
         }
+    }
+
+    //Problem 4
+    static void task4() {
+        int array[] = {3, 17, 7, 9, 5, 1, -1, -6, 199, 435, 36};
+        array = bubbleSort(array);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static int[] bubbleSort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        return array;
     }
 
     @Override
