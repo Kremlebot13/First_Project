@@ -7,6 +7,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static void main(String[] args) {
         task1();
+        Name person = new Name("Anton", "Petrov");
+        person.print();
     }
 
     //Problem 1
