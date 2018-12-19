@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
         task1();
         Name person = new Name("Anton", "Petrov");
         person.print();
+        task3();
     }
 
     //Problem 1
@@ -22,6 +23,25 @@ public class MainActivity extends AppCompatActivity {
     //arithmetic average of two numbers
     static double averageValue(double a, double b) {
         return (a + b) / 2;
+    }
+
+    //Problem 3
+    static void task3() {
+        for (int i = 0; i <= 15; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+        System.out.println();
+    }
+
+    static int fibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
     }
 
     @Override
