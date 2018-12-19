@@ -7,6 +7,11 @@ public class MainActivity extends AppCompatActivity {
 
     public static void main(String[] args) {
         task1();
+        Name person = new Name("Anton", "Petrov");
+        person.print();
+        task3();
+        task4();
+        System.out.println(task5("abc123"));
     }
 
     //Problem 1
@@ -20,6 +25,72 @@ public class MainActivity extends AppCompatActivity {
     //arithmetic average of two numbers
     static double averageValue(double a, double b) {
         return (a + b) / 2;
+    }
+
+    //Problem 3
+    static void task3() {
+        for (int i = 0; i <= 15; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+        System.out.println();
+    }
+
+    static int fibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    //Problem 4
+    static void task4() {
+        int array[] = {3, 17, 7, 9, 5, 1, -1, -6, 199, 435, 36};
+        array = bubbleSort(array);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static int[] bubbleSort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        return array;
+    }
+
+    //problem 5
+    static String task5(String str) {
+        int index = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) <= '9' && str.charAt(i) >= '0') {
+                index = i;
+                break;
+            }
+        }
+
+        String line = str.substring(0, index);
+        String num = str.substring(index, str.length());
+
+        try {
+            int number = Integer.parseInt(num);
+            number++;
+            line += number;
+        } catch (NumberFormatException e) {
+            line = str.substring(0, str.length());
+        }
+        return line;
     }
 
     @Override
