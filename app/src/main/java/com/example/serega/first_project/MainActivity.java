@@ -12,6 +12,31 @@ public class MainActivity extends AppCompatActivity {
         task3();
         task4();
         System.out.println(task5("abc123"));
+
+        // task 3.2
+        Runnable task = s -> System.out.println(s);
+        task.print("I love Java");
+        MainActivity object = new MainActivity();
+        object.repeatTask(10, task);
+
+        // task 3.6
+        Point a = new Point();
+        a.moving();
+
+        // task 3.8
+        Rectangle A = new Rectangle(3, 5);
+        A.perimeter();
+        A.area();
+
+        // task 3.9
+        Square B = new Square(5);
+        B.perimeter();
+        B.area();
+
+        // task 3.10
+        Circle C = new Circle(10);
+        C.perimeter();
+        C.area();
     }
 
     //Problem 1
@@ -91,6 +116,13 @@ public class MainActivity extends AppCompatActivity {
             line = str.substring(0, str.length());
         }
         return line;
+    }
+
+    //task 3.2
+    public void repeatTask(int times, Runnable task) {
+        for (int i = 0; i < times; i++) {
+            task.print("I love Java");
+        }
     }
 
     @Override
