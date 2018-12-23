@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
         // task 3.2
         Runnable task = s -> System.out.println(s);
         task.print("I love Java");
-        MainActivity object = new MainActivity();
-        object.repeatTask(10, task);
+        repeatTask(10, task);
+
 
         // task 3.6
-        Point a = new Point();
+        Point a = new Point(0, 0);
         a.moving();
 
         // task 3.8
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //task 3.2
-    public void repeatTask(int times, Runnable task) {
+    static public void repeatTask(int times, Runnable task) {
         for (int i = 0; i < times; i++) {
             task.print("I love Java");
         }

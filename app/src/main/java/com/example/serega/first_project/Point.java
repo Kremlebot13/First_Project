@@ -1,18 +1,13 @@
 package com.example.serega.first_project;
 
-import static com.example.serega.first_project.Directions.down;
-import static com.example.serega.first_project.Directions.left;
-import static com.example.serega.first_project.Directions.up;
-import static com.example.serega.first_project.Directions.right;
+import static com.example.serega.first_project.Directions.Down;
+import static com.example.serega.first_project.Directions.Left;
+import static com.example.serega.first_project.Directions.Up;
+import static com.example.serega.first_project.Directions.Right;
 
 public class Point {
     private int x;
     private int y;
-
-    Point() {
-        x = 0;
-        y = 0;
-    }
 
     Point(int x, int y) {
         this.x = x;
@@ -22,16 +17,16 @@ public class Point {
     //task 3.5
     public Point move(Directions motion) {
         switch (motion) {
-            case up:
+            case Up:
                 this.y++;
                 break;
-            case down:
+            case Down:
                 this.y--;
                 break;
-            case left:
+            case Left:
                 this.x--;
                 break;
-            case right:
+            case Right:
                 this.x++;
                 break;
         }
@@ -44,8 +39,8 @@ public class Point {
 
     // task 3.6
     public void moving() {
-        Point location = new Point();
-        Directions[] route = new Directions[]{up, up, left, down, left, down, down, right, right, down, right};
+        Point location = new Point(0, 0);
+        Directions[] route = new Directions[]{Up, Up, Left, Down, Left, Down, Down, Right, Right, Down, Right};
 
         printPosition();
         for (int i = 0; i < route.length; i++) {
