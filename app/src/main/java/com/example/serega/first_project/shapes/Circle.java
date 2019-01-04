@@ -1,10 +1,10 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.shapes;
 
 // task 3.10
 public class Circle implements Shape {
     private double diameter;
 
-    Circle(double diameter) {
+    public Circle(double diameter) {
         this.diameter = diameter;
     }
 

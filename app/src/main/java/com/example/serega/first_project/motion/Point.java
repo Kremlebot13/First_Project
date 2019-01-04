@@ -1,15 +1,15 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.motion;
 
-import static com.example.serega.first_project.Directions.Down;
-import static com.example.serega.first_project.Directions.Left;
-import static com.example.serega.first_project.Directions.Up;
-import static com.example.serega.first_project.Directions.Right;
+import static com.example.serega.first_project.motion.Directions.Down;
+import static com.example.serega.first_project.motion.Directions.Left;
+import static com.example.serega.first_project.motion.Directions.Up;
+import static com.example.serega.first_project.motion.Directions.Right;
 
 public class Point {
     private int x;
     private int y;
 
-    Point(int x, int y) {
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }

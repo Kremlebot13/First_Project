@@ -1,7 +1,15 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.serega.first_project.lambda.Name;
+import com.example.serega.first_project.R;
+import com.example.serega.first_project.lambda.Runnable;
+import com.example.serega.first_project.shapes.Circle;
+import com.example.serega.first_project.shapes.Rectangle;
+import com.example.serega.first_project.shapes.Square;
+import com.example.serega.first_project.motion.Point;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,23 +28,23 @@ public class MainActivity extends AppCompatActivity {
 
 
         // task 3.6
-        Point a = new Point(0, 0);
-        a.moving();
+        Point coordinate = new Point(0, 0);
+        coordinate.moving();
 
         // task 3.8
-        Rectangle A = new Rectangle(3, 5);
-        A.perimeter();
-        A.area();
+        Rectangle rectangle = new Rectangle(3, 5);
+        rectangle.perimeter();
+        rectangle.area();
 
         // task 3.9
-        Square B = new Square(5);
-        B.perimeter();
-        B.area();
+        Square square = new Square(5);
+        square.perimeter();
+        square.area();
 
         // task 3.10
-        Circle C = new Circle(10);
-        C.perimeter();
-        C.area();
+        Circle circle = new Circle(10);
+        circle.perimeter();
+        circle.area();
     }
 
     //Problem 1
@@ -113,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             number++;
             line += number;
         } catch (NumberFormatException e) {
-            line = str.substring(0, str.length());
+            line = str;
         }
         return line;
     }

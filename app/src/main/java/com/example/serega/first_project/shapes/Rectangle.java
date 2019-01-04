@@ -1,11 +1,13 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.shapes;
+
+import com.example.serega.first_project.shapes.Shape;
 
 // task 3.8
 public class Rectangle implements Shape {
     private double width;
     private double length;
 
-    Rectangle(double width, double length) {
+    public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
     }

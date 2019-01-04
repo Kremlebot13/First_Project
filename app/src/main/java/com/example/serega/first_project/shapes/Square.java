@@ -1,10 +1,12 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.shapes;
+
+import com.example.serega.first_project.shapes.Shape;
 
 // task 3.9
 public class Square implements Shape {
     private double sideLength;
 
-    Square(double sideLength) {
+    public Square(double sideLength) {
         this.sideLength = sideLength;
     }
 
