@@ -1,7 +1,15 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.serega.first_project.lambda.Name;
+import com.example.serega.first_project.R;
+import com.example.serega.first_project.lambda.Runnable;
+import com.example.serega.first_project.shapes.Circle;
+import com.example.serega.first_project.shapes.Rectangle;
+import com.example.serega.first_project.shapes.Square;
+import com.example.serega.first_project.motion.Point;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +20,31 @@ public class MainActivity extends AppCompatActivity {
         task3();
         task4();
         System.out.println(task5("abc123"));
+
+        // task 3.2
+        Runnable task = s -> System.out.println(s);
+        task.print("I love Java");
+        repeatTask(10, task);
+
+
+        // task 3.6
+        Point coordinate = new Point(0, 0);
+        coordinate.moving();
+
+        // task 3.8
+        Rectangle rectangle = new Rectangle(3, 5);
+        rectangle.perimeter();
+        rectangle.area();
+
+        // task 3.9
+        Square square = new Square(5);
+        square.perimeter();
+        square.area();
+
+        // task 3.10
+        Circle circle = new Circle(10);
+        circle.perimeter();
+        circle.area();
     }
 
     //Problem 1
@@ -88,9 +121,16 @@ public class MainActivity extends AppCompatActivity {
             number++;
             line += number;
         } catch (NumberFormatException e) {
-            line = str.substring(0, str.length());
+            line = str;
         }
         return line;
+    }
+
+    //task 3.2
+    static public void repeatTask(int times, Runnable task) {
+        for (int i = 0; i < times; i++) {
+            task.print("I love Java");
+        }
     }
 
     @Override

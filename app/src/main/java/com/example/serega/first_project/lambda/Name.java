@@ -1,4 +1,4 @@
-package com.example.serega.first_project;
+package com.example.serega.first_project.lambda;
 
 public class Name {
     private String firstName;
@@ -9,7 +9,7 @@ public class Name {
         lastName = "Ivanov";
     }
 
-    Name(String firstName, String lastName) {
+    public Name(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
